@@ -1,0 +1,19 @@
+.like-button {
+    margin: auto;
+}
+
+.like-counter {
+    text-align: center;
+}
+
+.image {
+    max-width: 300px;
+}
+
+.item-container {
+    display: inline-flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 4em;
+    text-align: center;
+}
