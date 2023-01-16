@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css';
 import axios from 'axios';
+import GalleryList from '../GalleryList/GalleryList.jsx';
 
 function App() {
   const [galleryItems, setGalleryItems] = useState([]);
@@ -25,9 +26,9 @@ const getGalleryData = () => {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
+          <h1 className="App-title">Gallery of My 2016 Road Trip</h1>
         </header>
-        <p>Gallery goes here</p>
+        <GalleryList galleryItems = { galleryItems }/>
       </div>
     );
 }
