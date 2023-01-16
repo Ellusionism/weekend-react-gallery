@@ -21,6 +21,7 @@ const getGalleryData = () => {
   }).catch((error) => {
     console.log('Error in getGalleryData:', error)
   });
+
 };
 
     return (
@@ -28,7 +29,7 @@ const getGalleryData = () => {
         <header className="App-header">
           <h1 className="App-title">Gallery of My 2016 Road Trip</h1>
         </header>
-        <GalleryList galleryItems = { galleryItems }/>
+        <GalleryList galleryItems = { galleryItems } getGalleryData = { getGalleryData } />
       </div>
     );
 }
